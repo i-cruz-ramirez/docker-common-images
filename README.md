@@ -1,6 +1,12 @@
 # docker-common-images
 Commands to install most common used docker images
 
+### ElasticSearch
+
+```sh
+docker run -d -p 9200:9200 -e "discovery.type=single-node" -v esdata:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:6.4.2
+```
+
 ### Redis
 
 ```sh
