@@ -30,7 +30,7 @@ docker run -d --hostname my-rabbit --name local_rabbit -p 5672:5672 -p 15672:156
 
 ### Mongo
 ```sh
-docker run -p 27017:27017 --name local_mongo -d mongo
+docker run -p 27017:27017 --name local_mongo -d mongo -e MONGODB_USER="user" -e MONGODB_DATABASE="mydatabase" -e MONGODB_PASS="mypass" 
 ```
 
 ### MYSQL
